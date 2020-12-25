@@ -17,6 +17,7 @@ def create_app(test_config=None):
   '''
   @app.after_request
   def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', 'https://quizitapp.netlify.app/')
     response.headers.add('Access-Control-Allow-Methods', 'GET, POST,PATCH, DELETE, OPTIONS')
     return response
     
