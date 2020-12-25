@@ -45,4 +45,4 @@ virtualenv==16.7.9
 Whoosh==2.7.4
 WTForms==2.2.1
 Flask-SSLify==0.1.5
-PyMySQL==0.10.1
+pymysql==0.10.1
