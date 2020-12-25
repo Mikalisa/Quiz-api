@@ -10,7 +10,7 @@ def create_app(test_config=None):
   # create and configure the app
   app = Flask(__name__)
   setup_db(app)
-  CORS(app, resources={r"/api/*": {"origins": "https://quizitapp.netlify.app/"}})
+  CORS(app)
 
   '''
   After_request decorator to set Access-Control-Allow
